@@ -1,0 +1,29 @@
+package com.abcbank.assignment.exceptions;
+
+import java.util.List;
+
+public class ResponseError {
+
+	private String message;
+	private List<String> details;
+	public ResponseError(String message, List<String> details) {
+		super();
+		this.message = message;
+		this.details = details;
+	}
+	public String getMessage() {
+		return message;
+	}
+	public void setMessage(String message) {
+		this.message = message;
+	}
+	public List<String> getDetails() {
+		return details;
+	}
+	public void setDetails(List<String> details) {
+		this.details = details;
+	}
+	
+	
+	
+}
